@@ -1,42 +1,53 @@
 <h1 align="center">
-  <a href="https://subdomain.puter.site" target="_blank">Subdomain Registrar</a>
+  <a href="https://puter.com/app/subdomain-registrar" target="_blank">Subdomain Registrar</a>
 </h1>
 
-<p align="center">
-  <a href="https://subdomain.puter.site" target="_blank">
-    <img src="screenshot.png" alt="Screenshot" width="600" />
-  </a>
+<p align="center">A web application for registering and managing subdomains on puter.site with real-time availability checking.
 </p>
 
+<p align="center">
+  <img src="screenshot.png" alt="Screenshot" width="600" />
+</p>
 
-A simple web application that allows users to register and manage subdomains on puter.site.
+<br>
 
 ## Features
 
-- **User Authentication**: Sign in with your Puter account
-- **Subdomain Availability Check**: Real-time checking if your desired subdomain is available
-- **Folder Selection**: Choose where to store your subdomain files
-- **Automatic Deployment**: Instantly publishes your subdomain after registration
+- **User Authentication**: Secure sign-in with Puter account
+- **Subdomain Availability**: Real-time availability checking
+- **Folder Selection**: Custom directory selection for subdomain files
+- **Instant Deployment**: Zero-configuration publishing to puter.site
+- **Domain Management**: Tools for managing existing subdomains
 
-## How It Works
-
-1. Sign in with your Puter account
-2. Select a folder to store your subdomain files
-3. Enter your desired subdomain name
-4. Check availability in real-time
-5. Register your subdomain
-6. Access your new site at `yourdomain.puter.site`
-
-## Technical Details
-
-This application uses:
-- Puter.js SDK for authentication, file system operations, and hosting
-- Vanilla JavaScript for the frontend
-- Modern CSS for styling
+<br>
 
 ## Getting Started
 
-Access the `index.html` file via a local server or an [online host](https://puter.com)
+Clone the repository: 
+
+```bash
+git clone https://github.com/puter-apps/subdomain.git
+```
+
+and open the `index.html` file in any hosted environment.
+
+Alternatively, access the hosted version at [puter.com/app/subdomain-registrar](https://puter.com/app/subdomain-registrar).
+
+<br>
+
+## How It Works
+
+Subdomain Registrar leverages [**Puter.js**](https://developer.puter.com/) to simplify domain registration:
+
+1. **Authentication**: Uses Puter's authentication system to verify user identity
+
+2. **Domain Verification**: Checks domain availability against Puter's registry in real-time
+
+3. **File System Integration**: Connects selected directories to the registered subdomain
+
+4. **Hosting Configuration**: Automatically configures hosting for the new subdomain
+
+<br>
 
 ## License
 
