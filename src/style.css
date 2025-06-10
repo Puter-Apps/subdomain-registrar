@@ -32,6 +32,29 @@ body {
     gap: 15px;
     align-items: center;
 }
+.github-link-nav {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s;
+    background: #e5e7eb; /* Similar to folder-button */
+    color: #374151;     /* Similar to folder-button */
+}
+.github-link-nav:hover {
+    background: #d1d5db; /* Similar to folder-button hover */
+    transform: scale(1.05);
+}
+.github-link-nav svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+}
 .navbar .user-info {
     font-size: 14px;
     color: #6b7280;
