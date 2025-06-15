@@ -1,9 +1,9 @@
-(function(){
-    // Only redirect if we're not in an iframe and on the wrong URL
-    if (window.self === window.top && !window.location.href.startsWith('https://puter.com/app/')){
-        window.location.href='https://puter.com/app/subdomain-registrar';
-    }
-})();
+// (function(){
+//     // Only redirect if we're not in an iframe and on the wrong URL
+//     if (window.self === window.top && !window.location.href.startsWith('https://puter.com/app/')){
+//         window.location.href='https://puter.com/app/subdomain-registrar';
+//     }
+// })();
 
 let currentDomain = '';
 let approvedParentPath = null;
@@ -79,12 +79,12 @@ function updateView() {
         elements.folderStep.style.display = 'none';
         elements.subdomainStep.style.display = 'block';
         elements.hostingPath.textContent = approvedParentPath;
-        elements.folderButton.textContent = '📁 Change Folder';
+        elements.folderButton.innerHTML = '<i class="fas fa-folder"></i> Change Folder';
         elements.registerButton.disabled = !isAvailable || isRegistering;
     } else {
         elements.folderStep.style.display = 'block';
         elements.subdomainStep.style.display = 'none';
-        elements.folderButton.textContent = '📁 Select Folder';
+        elements.folderButton.innerHTML = '<i class="fas fa-folder"></i> Select Folder';
         elements.registerButton.disabled = true;
     }
 }
